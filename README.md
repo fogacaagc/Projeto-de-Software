@@ -22,6 +22,19 @@ MVP acadêmico para centralizar o cadastro, a consulta e a atualização de info
 - HTML5, CSS3 e JavaScript
 - Maven
 
+## Fluxo principal de utilização
+
+O funcionamento do MVP segue um fluxo simples:
+
+1. O usuário acessa a tela inicial do sistema.
+2. Seleciona a opção de cadastrar uma nova informação.
+3. Preenche categoria, título, descrição e data de referência.
+4. O sistema valida os campos e armazena o registro no banco H2.
+5. Na tela de consulta, o usuário pode pesquisar pelo título ou filtrar por categoria.
+6. Ao localizar um registro, pode editar suas informações e salvar as alterações.
+
+Esse fluxo permite centralizar os registros institucionais e facilitar sua atualização e localização.
+
 ## Requisitos para executar
 
 - JDK 17 ou superior
