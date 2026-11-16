@@ -20,3 +20,17 @@ Além dos testes automatizados, foram definidos cenários para verificar o cadas
 ## Considerações finais
 
 O resultado positivo dos testes automatizados demonstra que o cenário coberto pela suíte de testes foi executado sem falhas. As demais verificações funcionais devem ser realizadas durante a validação manual do MVP.
+
+## Como reproduzir os testes
+
+Para executar os testes automatizados, é necessário ter o JDK e o Maven instalados.
+
+No terminal, dentro da pasta principal do projeto, execute:
+
+```bash
+mvn clean test
+```
+
+O Maven irá compilar o projeto e executar os testes disponíveis na suíte automatizada.
+
+Ao final, o resultado poderá ser conferido no terminal, incluindo a quantidade de testes executados, falhas e erros.
