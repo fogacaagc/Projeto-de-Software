@@ -128,3 +128,17 @@ O MVP não inclui gestão de usuários, permissões por departamento, anexos, no
 ## Testes
 
 Execute `mvn test` para rodar a suíte automatizada. Antes de publicar, também valide manualmente: cadastro válido, campos vazios, descrição acima de 500 caracteres, pesquisa por título, filtro por categoria, edição de registro e tentativa de acessar a API sem autenticação.
+
+## Cenários de validação do MVP
+
+Foram definidos cenários para verificar o funcionamento das principais operações:
+
+- **Cadastro válido:** verificar se uma informação preenchida corretamente é salva no banco de dados.
+- **Campos obrigatórios:** verificar se o sistema rejeita cadastros sem título, categoria, descrição ou data.
+- **Limite de caracteres:** verificar se descrições acima de 500 caracteres são rejeitadas.
+- **Pesquisa:** verificar se a busca pelo título retorna os registros correspondentes.
+- **Filtro:** verificar se a seleção de uma categoria apresenta somente os registros relacionados.
+- **Edição:** verificar se as alterações realizadas em um registro são persistidas corretamente.
+- **Autenticação:** verificar se o acesso aos endpoints protegidos sem credenciais é bloqueado.
+
+Esses cenários auxiliam na identificação de falhas e na verificação dos requisitos funcionais e de segurança do MVP.
